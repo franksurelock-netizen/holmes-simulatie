@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Holmes phishing-simulatie</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: #4d4d4d;
+      font-family: "Avenir Next", Avenir, system-ui, sans-serif;
+    }
+    main {
+      display: grid;
+      align-items: center;
+      min-height: 78vh;
+      padding: clamp(2rem, 7vw, 6rem);
+      background: #edf3f7 url("phihsing-background.jpg") center / cover no-repeat;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+      align-items: center;
+      gap: clamp(1rem, 5vw, 4rem);
+      width: min(100%, 70rem);
+      margin: auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.25rem, 6vw, 4.375rem);
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+    }
+    .hero img { display: block; width: 100%; max-width: 22rem; margin: auto; }
+    footer { padding: 2rem; text-align: center; }
+    footer img { width: 9rem; }
+    @media (max-width: 44rem) {
+      .hero { grid-template-columns: 1fr; }
+      .hero img { max-width: 15rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <h1>Gelukkig is dit een simulatie.</h1>
+      <img src="phihsing-user.png" alt="">
+    </div>
+  </main>
+  <footer>
+    <img src="phihsing-holmes.svg" alt="Holmes">
+  </footer>
+</body>
+</html>
